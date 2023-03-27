@@ -20,3 +20,9 @@ It happens that the main file in package.json was pointing to `index.js` instead
 [Reference](https://medium.com/@oxodesign/node-js-express-with-typescript-eslint-jest-prettier-and-husky-part-2-f129188ce404)
 
 [Reference](https://github.com/prettier/eslint-config-prettier)
+
+[Nice eslint doc](https://www.codiga.io/code-analysis/rules/javascript/all/all/)
+
+[Help to resolve one error in the rules](https://stackoverflow.com/questions/74863939/error-invalid-type-boolean-undefined-of-template-literal-expression-typescr)
+
+[ParserOptions.project issue](https://bobbyhadz.com/blog/typescript-parseroptions-project-has-been-set-for)
