@@ -1,15 +1,13 @@
-import express, { Express, Request, Response } from 'express';
+import express, { type Express, type Request, type Response } from 'express';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
 const app: Express = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 app.get('/', (req: Request, res: Response) => {
-  res.send(
-    'Express + TypeScript Configurations + Linting + found solution, better'
-  );
+  res.send('Express + TypeScript Configurations + Linting + found solution, better');
 });
 app.get('/greet', (req: Request, res: Response) => {
   res.send('Hello Guys');

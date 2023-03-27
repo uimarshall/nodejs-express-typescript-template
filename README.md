@@ -10,3 +10,13 @@ We write typescript code in a TypeScript file, then compile or transpile those t
 How I resolved the [Cannot find module error](https://bobbyhadz.com/blog/javascript-cannot-find-module-loader-js)
 
 It happens that the main file in package.json was pointing to `index.js` instead of "main": "`dist/index.js`",
+
+[Creating templates on github](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository)
+
+[Reference](https://blog.logrocket.com/how-to-set-up-node-typescript-express/)
+
+[Reference youtube](https://www.youtube.com/watch?app=desktop&v=11jpa8e5jEQ)
+
+[Reference](https://medium.com/@oxodesign/node-js-express-with-typescript-eslint-jest-prettier-and-husky-part-2-f129188ce404)
+
+[Reference](https://github.com/prettier/eslint-config-prettier)
