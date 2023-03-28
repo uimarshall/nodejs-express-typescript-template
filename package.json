@@ -4,7 +4,7 @@
   "description": "This repository is a template on how to setup node express and typescript for projects. This will enable you integrate TypeScript into your nodejs project.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rimraf dist && npx tsc -w",
+    "build": "rimraf dist && npx tsc",
     "start": "node dist/index.js",
     "server": "nodemon dist/index.js",
     "dev": "concurrently \"npm run build\" \"npm run server\"",
