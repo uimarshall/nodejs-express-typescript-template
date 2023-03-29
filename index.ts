@@ -1,5 +1,6 @@
 import express, { type Express, type Request, type Response } from 'express';
 import dotenv from 'dotenv';
+import logger from './logger/logger';
 
 dotenv.config();
 
@@ -13,6 +14,15 @@ app.get('/greet', (req: Request, res: Response) => {
   res.send('Hello Guys');
 });
 
+app.get('/event', (req, res, next) => {
+  try {
+    throw new Error('Not User!');
+  } catch (error) {
+    logger.error('Events Error: Unauthenticated user');
+    res.status(500).send('Error!');
+  }
+});
+
 app.listen(port, () => {
-  console.log(`[server]: Server is running at http://localhost:${port}`);
+  logger.info(`[server]: Server is running at http://localhost:${port}`);
 });
