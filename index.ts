@@ -1,10 +1,16 @@
 import express, { type Express, type Request, type Response } from 'express';
 import dotenv from 'dotenv';
+
 import logger from './logger/logger';
+import morganMiddleware from './logger/morganMiddleware';
 
 dotenv.config();
 
 const app: Express = express();
+
+// Middleware
+app.use(morganMiddleware);
+
 const port = process.env.PORT;
 
 app.get('/', (req: Request, res: Response) => {
